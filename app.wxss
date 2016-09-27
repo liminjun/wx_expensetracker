@@ -9,5 +9,25 @@
   box-sizing: border-box;
 } 
 .section{
-  width: 100%;
+  width: 90%;
+  margin: 10px 5%;
+}
+input,.picker{
+  border: 1px solid #D9D9D9;
+  border-radius:5px;
+  height: 24px;
+  line-height: 24px;
+}
+.btn{
+  float: left;
+  width: 30%;
+  margin: 10%;
+}
+.btn-primary{
+  color: #fff;
+  background-color: #1AAD19;
+}
+.btn-default{
+    color: #000000;
+    background-color: #F8F8F8;
 }

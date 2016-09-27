@@ -1,10 +1,33 @@
-<!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="section">
+    <view class="section__title">日期选择器</view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+      <view class="picker">{{date}}
+      </view>
+    </picker>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class="section">
+    <view class="section-title">描述:</view>
+    <input name="password" placeholder="" />
   </view>
-</view>
+  <view class="section">
+    <view class="section__title">分类</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">{{array[index]}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <view class="section-title">金额:</view>
+    <input name="password" placeholder="" />
+  </view>
+
+
+  <view class="btn-area">
+    <button formType="submit" class="btn btn-primary">确认</button>
+    <button formType="reset" class="btn btn-default">取消</button>
+  </view>
+</form>
