@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="section-title">登录</view>
+
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+    <view class="section">
+      <view class="section-title">邮箱:</view>
+      <input name="email" placeholder="Email" auto-focus />
+    </view>
+
+    <view class="section">
+      <view class="section-title">密码:</view>
+      <input password name="password" placeholder="密码" />
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit">确认</button>
+      <button formType="reset">取消</button>
+    </view>
+  </form>
+</view>
