@@ -22,7 +22,7 @@
 
   <view class="section">
     <view class="section-title">金额:</view>
-    <input name="password" placeholder="" />
+    <input type="digit" placeholder="" />
   </view>
 
 

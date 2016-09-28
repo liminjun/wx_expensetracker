@@ -1,10 +1,16 @@
-<!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="section">
+  <view class="section__title">开支统计</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item">ID</view>
+    <view class="flex-item">金额</view>
+    <view class="flex-item">描述</view>
+    <view class="flex-item">分类</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class="flex-wrp" wx:for="{{items}}" style="flex-direction:row;">
+    <view class="flex-item">{{item.id}}</view>
+    <view class="flex-item">{{item.price}}</view>
+    <view class="flex-item">{{item.description}}</view>
+    <view class="flex-item">{{item.categoryName}}</view>
   </view>
 </view>
